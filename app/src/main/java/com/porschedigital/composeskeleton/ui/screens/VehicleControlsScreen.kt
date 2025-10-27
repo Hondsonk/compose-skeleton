@@ -24,11 +24,14 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.porschedigital.composeskeleton.ui.VehicleControlsViewModel
 import com.porschedigital.composeskeleton.ui.VehicleControl
 import com.porschedigital.composeskeleton.ui.VehicleControls
+import com.porschedigital.composeskeleton.ui.VehicleControlsViewModelFactory
 
 @Composable
 fun VehicleControlsScreen(
     modifier: Modifier = Modifier,
-    vehicleControlsViewModel: VehicleControlsViewModel = viewModel()
+    vehicleControlsViewModel: VehicleControlsViewModel = viewModel(
+        factory = VehicleControlsViewModelFactory()
+    )
 ) {
     val vehicleControlsUiState by vehicleControlsViewModel.vehicleControlsUiState.collectAsState()
 
