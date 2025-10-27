@@ -1,0 +1,57 @@
+# Gradle files
+.gradle/
+build/
+*/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Local configuration files
+local.properties
+
+# IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Android Studio
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Log files
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Generated files
+app/proguard-rules.pro
+
+# Misc
+*.swp
+*.swo
+
+# Keystore files
+*.jks
+*.keystore
+
+# APKs
+*.apk
+*.ap_*
+
+# NDK
+obj/
+
+# Protobuf
+app/src/main/java/com/porschedigital/composeskeleton/proto/generated/
+
+# Crashlytics
+crashlytics-build.properties
+
+# Other
+*.class
+
+# Exclude test reports
+build/reports/
+
